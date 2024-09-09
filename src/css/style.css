@@ -1,0 +1,125 @@
+body {
+  width: 100vw;
+  background: url("../images/bg-desktop.svg") center no-repeat;
+  position: relative;
+}
+header .logo {
+  margin-left: 25%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  max-width: 100%;
+}
+.container .info {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  margin-bottom: 150px;
+  position: relative;
+}
+.info .title {
+  padding: 20px;
+  color: #b8a6ed;
+  font-size: 40px;
+}
+.info .subtitle {
+  font-size: 18px;
+  text-align: start;
+  padding: 10px 20px;
+  font-weight: 500;
+  width: 100%;
+  color: gray;
+}
+
+.btn-register {
+  background-color: #b8a6ed;
+  color: #ffff;
+  border-radius: 50px;
+  padding: 10px 25px;
+  margin: 20px;
+
+  align-self: center;
+  font-size: 18px;
+  font-weight: 400;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.btn-register:hover {
+  border: solid 1px gray;
+}
+.social{
+  display: flex;
+  justify-content: flex-end;
+  
+  padding: 0 15px 0 0;
+}
+
+.social i {
+  font-size: 40px;
+  align-self: center;
+  color: #b8a6ed;
+  margin: 3px;
+  padding: 10px;
+}
+.social i:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media (max-width: 320px) {
+  body {
+    background: url("../images/bg-mobile.svg") center no-repeat;
+  }
+  header .logo {
+    margin-left: 15%;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .image img {
+    width: 300px;
+    height: 300px;
+    margin: 10px 20px;
+    padding: 10px;
+  }
+  .container .info {
+    width: 100%;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  .social {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 330px) and (max-width: 768px) {
+  body {
+    background: url("../images/bg-desktop.svg") center no-repeat;
+    background-size: contain;
+  }
+  .container {
+    display: flex;
+   flex-direction: column;
+  }
+
+  .image img{
+    height: 400px;
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+  .info{
+    padding: 10px;
+  }
+  .social{
+    justify-content: space-around;
+  }
+  }
